@@ -81,10 +81,10 @@
 				var items = $("#content").find(".item");
 
 				var currentId = "";
-				items.each(function(){
+				items.each(function () {
 					var m = $(this);
 					var itemTop = m.offset().top;
-					if(top > itemTop){
+					if(top > itemTop - 200) {
 						currentId = "#" + m.attr("id");
 					} else {
 						return false;
